@@ -1,0 +1,26 @@
+<template id="t1">
+
+    <!--Trozo de codigo q se va a utilizar más adelante, es decir, que no se renderiza.-->
+
+    <style>
+        h1{color:aqua}
+    </style>
+    
+    <h1>Hola soy un componente</h1>
+
+</template>
+
+<script>
+    class PruebaComponent extends HTMLElement {
+        constructor(){
+                super()
+                console.log("Componente creado")
+                const oImport = document.querySelector('link[rel="import"').import;
+                console.log(oImport)
+                const elem = document.querySelector();
+                
+            }
+        }
+
+    customElements.define('prueba-component', PruebaComponent)
+</script>
